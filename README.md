@@ -19,7 +19,9 @@ After Cloudflare Pages has deployed the project, you need to set the DOH_SERVERS
 - In the Cloudflare Pages dashboard, find your project and click into the project settings page.
 - Select the "Environment Variables" section.
 - Create a new environment variable with the name `DOH_SERVERS` and set its value to the address of your own DoH (DNS over HTTPS) server. You can use multiple DoH servers separated by commas. For example:
-bash:https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://dns.quad9.net/dns-query
+```bash
+  https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://dns.quad9.net/dns-query
+```
 - After setting this, the system will automatically poll these DoH servers and prioritize using the fastest responding server.
 
 ## 4. Use Cloudflare Pages Domain or Custom Domain + /dns-query Path
