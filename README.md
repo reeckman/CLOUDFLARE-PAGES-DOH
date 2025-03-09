@@ -67,14 +67,20 @@ https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://dns.
 # ⚠ Additional Considerations
 
 1️⃣ **This tutorial is provided for educational purposes only. Users assume all risks associated with its use.**
-2️⃣ **Be mindful when choosing DoH servers.** Review their privacy policies before using them.
-3️⃣ **Cloudflare Pages and GitHub workflows may change over time.** Adjustments to these instructions may be required.
-4️⃣ **If using a custom domain, ensure compliance with domain regulations.**
-5️⃣ **Do not use this project for any illegal, malicious, or unethical purposes.**
-6️⃣ **The authors and contributors are NOT responsible for any damage or legal consequences resulting from misuse.**
-7️⃣ **Third-party links or services mentioned are used at your own risk.**
-8️⃣ **This guide is provided "as is," with no guarantees regarding accuracy or functionality.**
 
+2️⃣ **Be mindful when choosing DoH servers.** Review their privacy policies before using them.
+
+3️⃣ **Cloudflare Pages and GitHub workflows may change over time.** Adjustments to these instructions may be required.
+
+4️⃣ **If using a custom domain, ensure compliance with domain regulations.**
+
+5️⃣ **Do not use this project for any illegal, malicious, or unethical purposes.**
+
+6️⃣ **The authors and contributors are NOT responsible for any damage or legal consequences resulting from misuse.**
+
+7️⃣ **Third-party links or services mentioned are used at your own risk.**
+
+8️⃣ **This guide is provided "as is," with no guarantees regarding accuracy or functionality.**
 ---
 
 📢 **If you found this project helpful, consider giving it a ⭐ on GitHub to show your support!** 🚀
