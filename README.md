@@ -8,12 +8,16 @@
 📌 However, please take note of the following disclaimers:
 
 1️⃣ **This project is strictly for research and personal use only.** It must not be used for unlawful activities or any actions that infringe on others' rights.
+
 2️⃣ **Cloudflare’s Worker infrastructure is used, but this project is NOT affiliated with or officially supported by Cloudflare.** Any consequences arising from its use are solely the user’s responsibility.
+
 3️⃣ **The project authors and contributors hold no liability for any issues, including but not limited to:**
    - Data loss
    - Service disruptions
    - Security vulnerabilities
+
 4️⃣ **Users must comply with all relevant laws and regulations** and bear full responsibility for their usage.
+
 5️⃣ **If anyone misuses this project in a way that violates Cloudflare's terms of service,** the responsibility lies solely with them, not with the project maintainers.
 
 📢 **By using this project, you acknowledge and accept these terms. Proceed at your own discretion.**
