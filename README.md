@@ -1,8 +1,8 @@
-# 🚀 Cloudflare Encrypted DNS Worker Setup Guide 🚀
+   # 🚀 Cloudflare Encrypted DNS PAGES Setup Guide 🚀
 
 ## ⚠ Disclaimer ⚠
 
-🔹 **This project is an open-source initiative designed to build a DNS over HTTPS (DoH) forwarding service using Cloudflare's Worker functionality.**
+🔹 **This project is an open-source initiative designed to build a DNS over HTTPS (DoH) forwarding service using Cloudflare's PAGES functionality.**
 
 🔹 **The goal is to enhance network privacy and security, providing users with a more secure and privacy-protected DNS resolution service.**
 
