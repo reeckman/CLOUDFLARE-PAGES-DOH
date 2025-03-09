@@ -1,4 +1,4 @@
-             # 🚀 Cloudflare Encrypted DNS pages Setup Guide 🚀
+# 🚀 Cloudflare Encrypted DNS pages Setup Guide 🚀
 
 ## ⚠ Important Notice ⚠
 
