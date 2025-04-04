@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="欢迎来到我的旅行博客，分享环游世界的故事和美丽风景。">
-  <title>我的旅行日志</title>
-  <link rel="stylesheet" href="/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅行足迹</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">旅行日志</h1>
-      <nav>
-        <ul>
-          <li><a href="/" class="active">首页</a></li>
-          <li><a href="/about">关于我</a></li>
-          <li><a href="/contact">联系我</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>发现未知的世界</h2>
-      <p>记录每一次旅行的足迹，每一段难忘的回忆。</p>
-    </div>
-  </section>
+    <header class="site-header">
+        <div class="container">
+            <h1>我的旅行足迹</h1>
+            <p>记录世界的角落，分享旅途的故事</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">目的地</a></li>
+                    <li><a href="#">关于我</a></li>
+                    <li><a href="#">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <section class="posts">
-      <article class="post">
-        <h3>探索古城的秘密</h3>
-        <p>古城有着悠久的历史和独特的文化，在这里每一块石板路都述说着过去的故事...</p>
-        <a href="/posts/ancient-city" class="read-more">阅读更多</a>
-      </article>
-      <article class="post">
-        <h3>山水之间的诗意</h3>
-        <p>在连绵的山脉和清澈的湖泊之间，我找到了内心的平静...</p>
-        <a href="/posts/mountains-and-lakes" class="read-more">阅读更多</a>
-      </article>
-    </section>
-  </main>
+    <main class="main-content container">
+        <h2>最新游记</h2>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 我的旅行日志. All rights reserved.</p>
-    </div>
-  </footer>
+        <article class="post-preview">
+            <img src="placeholder-image1.jpg" alt="京都红叶景色" class="post-image">
+            <div class="post-content">
+                <h3><a href="#">京都秋色：沉醉在岚山的红叶之中</a></h3>
+                <p class="post-meta">发布于 <time datetime="2025-04-01">2025年4月1日</time></p>
+                <p>秋天的京都是一幅流动的画卷，尤其是在岚山。乘坐嵯峨野小火车穿梭于山谷间，两岸的枫叶如火般燃烧，仿佛进入了童话世界...</p>
+                <a href="#" class="read-more">阅读全文 &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-preview">
+            <img src="placeholder-image2.jpg" alt="冰岛极光" class="post-image">
+             <div class="post-content">
+                <h3><a href="#">追逐冰岛的梦幻极光</a></h3>
+                <p class="post-meta">发布于 <time datetime="2025-03-15">2025年3月15日</time></p>
+                <p>冰岛，一个充满神秘与奇幻的国度。在寒冷的冬夜，等待欧若拉女神的降临，当那抹绿色、紫色交织的光带在夜空中舞动时，所有的等待都值得了...</p>
+                <a href="#" class="read-more">阅读全文 &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-preview">
+            <img src="placeholder-image3.jpg" alt="巴厘岛海滩" class="post-image">
+            <div class="post-content">
+                <h3><a href="#">巴厘岛的慵懒午后：阳光、沙滩与海浪</a></h3>
+                <p class="post-meta">发布于 <time datetime="2025-02-20">2025年2月20日</time></p>
+                <p>逃离喧嚣，来到巴厘岛。在金巴兰海滩享受落日晚餐，在乌布的稻田间感受宁静，这里的每一刻都充满了惬意与放松...</p>
+                <a href="#" class="read-more">阅读全文 &rarr;</a>
+            </div>
+        </article>
+
+        </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 我的旅行足迹. 保留所有权利.</p>
+            </div>
+    </footer>
+
 </body>
 </html>
