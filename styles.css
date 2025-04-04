@@ -1,151 +1,208 @@
-/* 全局重置 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* --- 全局和基础样式 --- */
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 更现代的字体 */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* 淡雅的背景色 */
+    color: #333;
+    line-height: 1.6;
 }
 
-/* 容器 */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 960px; /* 限制内容最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 0 20px; /* 两侧留白 */
 }
 
-/* 头部 */
-header {
-  background-color: #343a40;
-  color: #fff;
-  padding: 1rem 0;
+a {
+    color: #007bff; /* 醒目的链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s ease; /* 平滑颜色过渡 */
 }
 
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+a:hover {
+    color: #0056b3; /* 鼠标悬停颜色加深 */
+    text-decoration: underline; /* 悬停时加下划线 */
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
+img {
+    max-width: 100%; /* 图片响应式 */
+    height: auto;
+    display: block; /* 避免图片下方出现空隙 */
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
+/* --- 头部样式 --- */
+.site-header {
+    background-color: #343a40; /* 深色背景 */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 40px; /* 与主体内容间距 */
 }
 
-nav ul li {
-  margin-left: 1.5rem;
+.site-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.8em; /* 增大标题字号 */
+    font-weight: bold;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.site-header p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #adb5bd; /* 副标题颜色稍浅 */
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  color: #f1c40f;
+/* --- 导航样式 --- */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
-/* 英雄区 */
-.hero {
-  background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+.main-nav li {
+    display: inline-block; /* 水平排列 */
+    margin: 0 15px;
 }
 
-.hero-content {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 8px;
+.main-nav a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase; /* 字母大写 */
+    font-size: 0.9em;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; /* 准备悬停效果 */
+    transition: border-bottom-color 0.3s ease;
 }
 
-.hero-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.main-nav a:hover {
+    color: #fff; /* 悬停时颜色不变 */
+    border-bottom-color: #007bff; /* 悬停时显示下划线 */
+    text-decoration: none; /* 覆盖全局 a:hover 的下划线 */
 }
 
-.hero-content p {
-  font-size: 1.2rem;
+
+/* --- 主体内容样式 --- */
+.main-content {
+    background-color: #fff; /* 白色背景 */
+    padding: 40px; /* 内边距 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+    border-radius: 8px; /* 圆角 */
+    margin-bottom: 40px;
 }
 
-/* 主要内容 */
-main {
-  padding: 2rem 0;
+.main-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #495057; /* 标题颜色 */
+    border-bottom: 2px solid #eee; /* 分隔线 */
+    padding-bottom: 10px;
 }
 
-.posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+/* --- 博文预览样式 --- */
+.post-preview {
+    display: flex; /* 使用 Flexbox 布局 */
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee; /* 文章间分隔线 */
+    padding-bottom: 30px;
+    gap: 30px; /* 图片和文字间距 */
+    align-items: flex-start; /* 顶部对齐 */
 }
 
-.post {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+.post-preview:last-child {
+    border-bottom: none; /* 最后一个预览下方无分隔线 */
+    margin-bottom: 0;
 }
 
-.post:hover {
-  transform: translateY(-5px);
+.post-image {
+    flex: 0 0 250px; /* 固定图片宽度，不伸缩 */
+    height: 180px; /* 固定图片高度 */
+    object-fit: cover; /* 裁剪图片以填充容器 */
+    border-radius: 5px; /* 图片圆角 */
 }
 
-.post h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #343a40;
+.post-content {
+    flex: 1; /* 文字内容占据剩余空间 */
 }
 
-.post p {
-  margin-bottom: 1rem;
-  color: #555;
+.post-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.6em;
+}
+
+.post-content h3 a {
+    color: #333; /* 标题链接颜色 */
+}
+
+.post-content h3 a:hover {
+    color: #007bff;
+}
+
+.post-meta {
+    color: #868e96; /* 元信息颜色 */
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    margin-bottom: 15px;
 }
 
 .read-more {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-  transition: color 0.3s ease;
+    display: inline-block; /* 块状显示 */
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .read-more:hover {
-  color: #0056b3;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none; /* 悬停无下划线 */
 }
 
-/* 页脚 */
-footer {
-  background-color: #343a40;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.9rem;
+/* --- 页脚样式 --- */
+.site-footer {
+    background-color: #343a40; /* 与头部一致的深色背景 */
+    color: #adb5bd; /* 浅色文字 */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* 与主体内容间距 */
+    font-size: 0.9em;
 }
 
-/* 响应式 */
+/* --- 响应式设计 (针对小屏幕) --- */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 0.5rem 0;
-  }
+    .post-preview {
+        flex-direction: column; /* 垂直排列图片和文字 */
+        align-items: center; /* 居中对齐 */
+        text-align: center; /* 文字居中 */
+    }
+
+    .post-image {
+        flex-basis: auto; /* 恢复自动宽度 */
+        width: 80%; /* 限制图片宽度 */
+        margin-bottom: 20px; /* 图片下方增加间距 */
+    }
+
+    .main-nav li {
+        display: block; /* 导航项垂直排列 */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 2.2em;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .post-content h3 {
+        font-size: 1.4em;
+    }
 }
